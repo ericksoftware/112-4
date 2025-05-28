@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="display-4">About the Developer</h1>
+    
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <img src="{% static 'img/milktea.jpg' %}" class="img-fluid rounded-circle" alt="Developer Profile" />
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Hello, I'm eriwi</h2>
+                    <p class="card-text">
+                        I'm a passionate developer with experience in Django, Python, and web development.
+                        This application represents my journey in learning and implementing Django concepts.
+                    </p>
+                    <p class="card-text">
+                        When I'm not coding, you can find me enjoying a cup of milk tea (as you can see in the picture),
+                        exploring new technologies, or contributing to open-source projects.
+                    </p>
+                    <p class="card-text">
+                        My goal is to create clean, efficient, and user-friendly web applications that solve real problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

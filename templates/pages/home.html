@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="display-4">Welcome to My Django App</h1>
+    
+    <div class="card mt-4">
+        <div class="card-body">
+            <h2 class="card-title">App Purpose</h2>
+            <p class="card-text">
+                This application is designed to demonstrate Django web development skills and serve as a template for future projects.
+                It includes basic functionality like user authentication, page navigation, and responsive design.
+            </p>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-body">
+            <h2 class="card-title">How to Use</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Navigate between pages using the navigation bar</li>
+                <li class="list-group-item">Visit the About page to learn more about the developer</li>
+                <li class="list-group-item">Explore different features as they're added</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
