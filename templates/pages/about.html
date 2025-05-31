@@ -4,28 +4,49 @@
 {% block title %}About{% endblock title %}
 
 {% block content %}
-<div class="container mt-4">
-    <h1 class="display-4">About the Developer</h1>
-    
-    <div class="row mt-4">
-        <div class="col-md-4">
-            <img src="{% static 'img/milktea.jpg' %}" class="img-fluid rounded-circle" alt="Developer Profile" />
+<div class="container">
+    <div class="text-center mb-5">
+        <h1 class="display-4">About Me</h1>
+        <p class="lead text-muted">Developer & Creative Thinker</p>
+    </div>
+
+    <div class="row align-items-center">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="profile-image-container">
+                <img src="{% static 'img/milktea.jpg' %}" class="img-fluid rounded-circle" alt="Developer Profile">
+                <div class="image-overlay"></div>
+            </div>
         </div>
-        <div class="col-md-8">
+        
+        <div class="col-lg-8">
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title">Hello, I'm eriwi</h2>
                     <p class="card-text">
-                        I'm a passionate developer with experience in Django, Python, and web development.
-                        This application represents my journey in learning and implementing Django concepts.
+                        I'm a passionate full-stack developer specializing in Django and modern web technologies. 
+                        With a focus on clean code and intuitive user interfaces, I build applications that are 
+                        both powerful and enjoyable to use.
                     </p>
-                    <p class="card-text">
-                        When I'm not coding, you can find me enjoying a cup of milk tea (as you can see in the picture),
-                        exploring new technologies, or contributing to open-source projects.
-                    </p>
-                    <p class="card-text">
-                        My goal is to create clean, efficient, and user-friendly web applications that solve real problems.
-                    </p>
+                    
+                    <div class="skills-section mt-4">
+                        <h5 class="mb-3">My Skills</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="skill-badge">Django</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">UI/UX</span>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-section mt-4">
+                        <h5 class="mb-3">Personal Interests</h5>
+                        <p>
+                            When I'm not coding, you'll find me enjoying milk tea (as pictured), exploring new 
+                            frameworks, or contributing to open-source projects. I believe in continuous learning 
+                            and sharing knowledge with the developer community.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

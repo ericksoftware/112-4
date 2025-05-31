@@ -4,29 +4,54 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<div class="container mt-4">
-    <h1 class="display-4">Welcome to My Django App</h1>
-    
-    <div class="card mt-4">
-        <div class="card-body">
-            <h2 class="card-title">App Purpose</h2>
-            <p class="card-text">
-                This application is designed to demonstrate Django web development skills and serve as a template for future projects.
-                It includes basic functionality like user authentication, page navigation, and responsive design.
-            </p>
-        </div>
+<div class="container">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Welcome to MyApp</h1>
+        <p class="lead text-muted">A modern Django application with elegant design</p>
     </div>
 
-    <div class="card mt-4">
-        <div class="card-body">
-            <h2 class="card-title">How to Use</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Navigate between pages using the navigation bar</li>
-                <li class="list-group-item">Visit the About page to learn more about the developer</li>
-                <li class="list-group-item">Explore different features as they're added</li>
-            </ul>
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">App Purpose</h2>
+                    <p class="card-text">
+                        This application showcases Django web development skills with a focus on clean design 
+                        and user experience. It serves as both a demonstration and a template for future projects.
+                    </p>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="icon-circle me-3">✓</span>
+                            <span>User authentication system</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="icon-circle me-3">✓</span>
+                            <span>Responsive design</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="icon-circle me-3">✓</span>
+                            <span>Modern UI components</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Getting Started</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Explore the navigation menu</li>
+                        <li class="list-group-item">Visit the About page for developer info</li>
+                        <li class="list-group-item">Check back for new features</li>
+                    </ul>
+                    <div class="mt-4 text-center">
+                        <button class="btn btn-primary">Explore More</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 {% endblock content %}
-
