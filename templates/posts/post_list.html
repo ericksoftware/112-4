@@ -6,7 +6,6 @@
 {% block content %}
 <div class="container">
     <h1 class="mb-4">All Posts</h1>
-    <a href="{% url 'post_form' %}" class="btn btn-primary mb-4">+ New Post</a>
     
     <div class="row">
         {% for post in object_list %}
@@ -20,7 +19,6 @@
                         <small class="text-muted">By {{ post.author }} on {{ post.created_on|date:"M d, Y" }}</small>
                         <div>
                             <a href="{% url 'post_detail' post.pk %}" class="btn btn-sm btn-outline-primary">View</a>
-                            <a href="{% url 'delete' post.pk %}" class="btn btn-sm btn-outline-danger">Delete</a>
                         </div>
                     </div>
                 </div>
