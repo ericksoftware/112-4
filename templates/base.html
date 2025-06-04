@@ -37,6 +37,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'post_form' %}">New Post</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'drafts' %}">My Drafts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'archived' %}">My Archived</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'password_change' %}">Change Password</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'password_reset' %}">Reset Password</a>
+                            </li>
                             <form method="POST" action="{% url 'logout' %}" class="d-inline">
                                 {% csrf_token %}
                                 <button type="submit" class="btn btn-link nav-link">Logout</button>

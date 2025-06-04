@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}My Archived{% endblock title %}
+
+{% block content %}
+<h1>My Archived</h1>
+
+{% if post_list %}
+    <ul>
+        {% for post in post_list %}
+            <li>
+                <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a> - {{ post.created_on }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No Archived posts available.</p>
+{% endif %}
+
+{% endblock content %}
